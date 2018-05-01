@@ -29,7 +29,7 @@ public:
 	int getCols() const { return cols; };                //获取列数  
 	int getRows() const { return rows; };                //获取行数  
 	int getSize() const { return rows * cols; };         //获取数组大小
-    bool isSingular() const { inverse();return is_singular;};//判断矩阵是否奇异
+    bool isSingular()  { inverse();return is_singular;};//判断矩阵是否奇异
 
 	T& operator()(int row, int col);					//括号操作符重载，用于获取矩阵第row行第col列元素 
 
